@@ -79,7 +79,7 @@ main section .livrosRecomendados ul .indications {
   color: #fff;
 }
 main section .livrosRecomendados ul li {
-  text-align: left;
+  text-align: center;
   transition: 0.2s ease-in-out;
 }
 main section .livrosRecomendados ul li:hover {
