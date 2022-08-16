@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Bree Serif', serif;
+    color: white;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav {
+    background-color: rgb(75, 40, 0);
+    box-shadow: 0px 5px 15px #000;
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+
+        img {
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+    }
+
+    .nav-link {
+        a {
+            color: white;
+        }
+    }
+
+    ul.navbar-nav {
+        display: flex;
+        align-items: center;
+
+        a {
+            font-size: 18px;
+        }
+    }
+}
+
+main {
+
+    height: 87vh;
+    min-height: fit-content;
+    width: 100vw;
+    background-blend-mode: exclusion;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/200/682/459/table-books-stack-page-wallpaper-preview.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .blacklayer {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.6;
+    }
+
+    section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+
+        .livrosRecomendados {
+            h1 {
+                font-size: 24px;
+                color: #fff;
+                text-align: center;
+            }
+
+            ul {
+                height: 484px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 25px;
+
+                .indications {
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+                li {
+                    text-align: left;
+                    transition: 0.2s ease-in-out;
+                }
+
+                li:hover {
+                    transform: scale(1.20);
+                }
+            }
+
+
+        }
+
+        .recommendations {
+            width: 333px;
+            max-width: 80%;
+            overflow: hidden;
+            z-index: 2;
+            transition: 0.2s ease-in-out;
+
+            h1 {
+                font-size: 24px;
+                color: #fff;
+                text-align: center;
+            }
+        }
+
+        .recommendations:hover {
+            transform: scale(1.05);
+        }
+
+        .video-youtube {
+            max-width: 85vw;
+            z-index: 2;
+            transition: 0.2s ease-in-out;
+        }
+
+        .video-youtube:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+footer {
+    height: 120px;
+    background-color: #4b2800;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+
+    article {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+            text-align: center;
+            font-size: 16px;
+            margin: 0;
+            z-index: 2;
+        }
+
+        p {
+            align-self: flex-end;
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        width: 100vw;
+
+        .navbar-brand {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .container a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+
+            img {
+                margin: 5px 0;
+            }
+        }
+    }
+
+    main {
+        height: fit-content;
+
+        section {
+            margin-top: 200px;
+            padding-top: 40px;
+
+            .livrosRecomendados {
+                height: 40vh;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .recommendations {
+                height: 60vh;
+
+                img {
+                    width: fill !important;
+                }
+            }
+
+            .video-youtube {
+                height: 20vh;
+                max-width: fit-content;
+
+                iframe {
+                    width: 100%;
+                }
+            }
+        }
+
+        .blacklayer {
+            height: 140vh;
+        }
+    }
+
+    footer {
+        height: 180px;
+        margin-top: 145px;
+
+        article {
+            width: 85%;
+
+            h1 {
+                text-align: justify !important;
+                font-size: 14px;
+            }
+        }
+    }
+}
