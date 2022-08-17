@@ -73,39 +73,44 @@ main section .livrosRecomendados ul {
   flex-direction: column;
   justify-content: center;
   gap: 25px;
+  background-color: rgba(63, 63, 63, 0.795);
+  border-radius: 12px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 25px;
 }
 main section .livrosRecomendados ul .indications {
   text-decoration: none;
   color: #fff;
 }
 main section .livrosRecomendados ul li {
-  text-align: left;
+  text-align: center;
   transition: 0.2s ease-in-out;
 }
 main section .livrosRecomendados ul li:hover {
   transform: scale(1.2);
 }
-main section .recommendations {
+main .recommendations {
   width: 333px;
   max-width: 80%;
   overflow: hidden;
   z-index: 2;
   transition: 0.2s ease-in-out;
 }
-main section .recommendations h1 {
+main .recommendations h1 {
   font-size: 24px;
   color: #fff;
   text-align: center;
 }
-main section .recommendations:hover {
+main .recommendations:hover {
   transform: scale(1.05);
 }
-main section .video-youtube {
+main .video-youtube {
   max-width: 85vw;
   z-index: 2;
   transition: 0.2s ease-in-out;
 }
-main section .video-youtube:hover {
+main .video-youtube:hover {
   transform: scale(1.05);
 }
 
