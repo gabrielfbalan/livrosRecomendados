@@ -67,7 +67,7 @@ main section .livrosRecomendados h1 {
   color: #fff;
   text-align: center;
 }
-main section .livrosRecomendados ul {
+main section ul {
   height: 484px;
   display: flex;
   flex-direction: column;
