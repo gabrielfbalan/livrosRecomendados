@@ -83,6 +83,7 @@ main section .livrosRecomendados .box ul {
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 20px;
+  scrollbar-width: thin;
 }
 main section .livrosRecomendados .box ul .indications {
   text-decoration: none;
